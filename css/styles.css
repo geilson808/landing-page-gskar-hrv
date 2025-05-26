@@ -1,0 +1,371 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Usar a fonte do Google Fonts */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: #470b0b;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #100f0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Dourado */
+}
+
+/* Botões CTA (Call To Action) */
+.btn-cta {
+    display: inline-block;
+    background-color: #e60000; /* Vermelho vibrante */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border: none; /* Para o botão do formulário */
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    background-color: #060606; /* Vermelho mais escuro */
+    text-transform: uppercase;
+}
+
+.btn-cta.secondary {
+    background-color: #007bff; /* Azul */
+}
+
+.btn-cta.secondary:hover {
+    background-color: #0056b3;
+}
+.container-offer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Hero Section */
+.hero-section {
+   
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 150px; /* Mais padding para espaçamento */
+    min-height: 60vh; /* Altura mínima da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+}
+/* /IMG/Hero_hrv.webp.webp */
+.hero-section {
+background: url(../img/Hero_hrv_webp.webp) no-repeat center center/cover;
+opacity: 0.8; /* Opacidade para suavizar o fundo */
+width: 100%;
+height: 100vh; /* Altura total da viewport */
+
+}
+
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Seções Gerais */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Seção de Oferta */
+.offer-section {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-main-image {
+    max-width: 80%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Seção de Características */
+.features-section {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e60000;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Seção de Galeria */
+.gallery-section {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px; /* Altura fixa para consistência */
+    object-fit: cover; /* Recorta a imagem para preencher o espaço */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Seção de Testemunhos */
+.testimonials-section {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-left: 5px solid #e60000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.testimonial-item span {
+    font-weight: 700;
+    color: #e60000;
+}
+
+/* Seção de Contato */
+.contact-section {
+    background-color: #e60000; /* Vermelho para destaque */
+    color: #fff;
+}
+
+.contact-section h2 {
+    color: #fff;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #ffd700; /* Dourado para o botão */
+    color: #e60000; /* Texto vermelho */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800; /* Dourado mais escuro */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1a1a1a;
+    color: #bbb;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+/* --- Media Queries (Responsividade) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap; /* Permite que os links quebrem linha */
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .features-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+
+    .car-main-image {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 0.9em;
+    }
+    .btn-cta {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+}
